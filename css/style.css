@@ -1,6 +1,6 @@
 /* Tipografía */
 @font-face {
-  font-family: "Saol Display Light";
+  font-family: "Saol Display Italic";
   src: url("../assets/fonts/SaolDisplay-LightItalic.woff2") format("woff2");
   font-style: italic;
   font-weight: 400;
@@ -12,7 +12,12 @@
   font-style: normal;
   font-weight: 400;
 }
-
+@font-face {
+  font-family: "Saol Display Light";
+  src: url("../assets/fonts/SaolDisplay-Light.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
 /****************************************
 *    Variables
 *****************************************/
@@ -24,6 +29,7 @@
   /* Typography */
   --font-family: "Saol Display Regular";
   --font-family-light: "Saol Display Light";
+  --font-family-italic: "Saol Display Italic";
 }
 
 /****************************************
@@ -32,7 +38,7 @@
 body {
   background: var(--background);
   color: var(--primary);
-  font-family: var(--font-family);
+  font-family: var(--font-family-light);
 }
 
 a {
@@ -50,39 +56,52 @@ a {
   display: flex;
   justify-content: space-between;
   font-size: 28px;
-  padding-top: 32px;
-  padding-bottom: 37px;
+  padding-top: 40px;
+  padding-left: 39px;
+  padding-right: 39px;
 }
 
 .header h1 {
   font-size: 28px;
   padding-left: 26px;
+  font-family: var(--font-family-light);
 }
 
 .nav {
   padding-right: 26px;
+  font-family: var(--font-family-italic);
 }
 
 .nav > * {
-  padding-left: 1em;
+  padding-left: 2em;
 }
 
 /* Proyectos */
 .proyectos {
-  width: 346px;
   margin: auto;
 }
 
 .proyectos img {
+  object-fit: cover;
+
+  width: 500px;
+  height: 537px;
+
   margin-bottom: 17px;
-  filter: blur(4px);
+  filter: blur(5px);
   transition-duration: 0.2s;
 }
 
 .proyectos img:hover {
   filter: blur(0);
 }
-
+.footer p {
+  font-size: 18px;
+  padding-left: 60px;
+  padding-bottom: 30px;
+  padding-top: 10px;
+  font-family: var(--font-family-light);
+}
 @media screen and (min-width: 40em) {
   /* Desktop */
   .proyectos {

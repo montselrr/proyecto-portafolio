@@ -127,9 +127,10 @@ a {
   object-fit: cover;
   width: 500px;
   height: 537px;
-  margin-bottom: 17px;
+  margin: 0 auto 17px auto;
   filter: blur(5px);
   transition-duration: 0.2s;
+  border: 3px dotted white;
 }
 
 .proyectos img:hover {
@@ -144,4 +145,12 @@ a {
     gap: 1em;
     width: 90vw;
   }
+}
+
+/****************************************
+*    Helpers
+*****************************************/
+/* Ayuda visual temporal */
+.outline {
+  border: 2px dotted blue;
 }

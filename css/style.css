@@ -18,6 +18,13 @@
   font-style: normal;
   font-weight: 400;
 }
+
+@font-face {
+  font-family: "Everett";
+  src: url("../assets/fonts/Everett-Ligh.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 400;
+}
 /****************************************
 *    Variables
 *****************************************/
@@ -30,6 +37,7 @@
   --font-family: "Saol Display Regular";
   --font-family-light: "Saol Display Light";
   --font-family-italic: "Saol Display Italic";
+  --font-family-everett: "Everett";
 }
 
 /****************************************
@@ -157,6 +165,7 @@ a {
   font-size: 15px;
   padding-right: 39px;
   padding-left: 60px;
+  font-family: var(--font-family-everett);
 }
 
 @media screen and (min-width: 40em) {
@@ -164,6 +173,7 @@ a {
     font-size: 15px;
     padding-right: 39px;
     padding-left: 60px;
+    font-family: var(--font-family-everett);
   }
 }
 

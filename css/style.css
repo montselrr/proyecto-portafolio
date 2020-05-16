@@ -113,12 +113,15 @@ a {
 }
 
 /* Footer */
+.footer {
+  margin-top: 2em;
+}
+
 .footer p {
+  /*  color: rgb(78, 78, 248); */
   font-size: 12px;
-  padding-left: 60px;
-  padding-bottom: 30px;
-  padding-top: 10px;
   font-family: var(--font-family-light);
+  padding-left: 20px;
 }
 
 @media screen and (min-width: 40em) {
@@ -153,64 +156,63 @@ a {
   }
 }
 
+/* Proyectos */
+.contacto {
+  height: 100%;
+  max-width: 60vw;
+  padding-left: 20px;
+}
+
+.contacto h2 {
+  font-family: var(--font-family);
+  font-size: 32px;
+}
+
+.contacto p {
+  font-family: var(--font-family-everett);
+  font-size: 14px;
+  /* line-height: 1; */
+  text-align: justify;
+}
+
+@media screen and (min-width: 40em) {
+  .contacto {
+    display: grid;
+    grid-template-columns: 40vw 1fr;
+    grid-template-rows: auto 1fr;
+    max-width: 100vw;
+    margin: 0 auto;
+    padding-left: 60px;
+  }
+
+  .hola {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  .experiencia {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+  }
+
+  .contactame {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    justify-self: center;
+  }
+
+  .contacto h2 {
+    font-size: 64px;
+  }
+  .contacto p {
+    font-size: 18px;
+  }
+}
+
 /****************************************
 *    Helpers
 *****************************************/
 /* Ayuda visual temporal */
 .outline {
   border: 2px dotted blue;
-}
-
-.Texto {
-  font-size: 15px;
-  padding-right: 39px;
-  padding-left: 60px;
-  font-family: var(--font-family-everett);
-}
-
-@media screen and (min-width: 40em) {
-  .Texto {
-    font-size: 15px;
-    padding-right: 39px;
-    padding-left: 60px;
-    font-family: var(--font-family-everett);
-  }
-}
-
-.Contenido {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-@media screen and (min-width: 40em) {
-  .Contenido {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-}
-
-.Título {
-  font-size: 64px;
-  padding-right: 39px;
-  padding-left: 60px;
-}
-
-@media screen and (min-width: 40em) {
-  .Titulo {
-    font-size: 64px;
-    padding-right: 39px;
-    padding-left: 60px;
-  }
-}
-
-Contacto {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-@media screen and (min-width: 40em) {
-  .Contacto {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
 }
